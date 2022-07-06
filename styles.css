@@ -65,3 +65,23 @@ body {
   cursor: pointer;
   background-color: darkred;
 }
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: #ffc600;
+  transform: translateY(-30px);
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s ease-in all;
+}
