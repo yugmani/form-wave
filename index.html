@@ -9,15 +9,22 @@
       Remove all code in `styles.css`!
     -->
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+    <div class="container">
+      <h1>Please Login</h1>
+      <form action="">
+        <div class="form-control">
+          <input type="text" required />
+          <label for="">Email</label>
+        </div>
+        <div class="form-control">
+          <input type="text" required />
+          <label for="">Password</label>
+        </div>
+        <button class="btn">Login</button>
+      </form>
+    </div>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
